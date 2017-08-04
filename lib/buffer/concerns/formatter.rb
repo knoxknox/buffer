@@ -14,7 +14,7 @@ module Buffer
       end
 
       def hex
-        bytes.map { |x| x.to_s(16).rjust(2, '0') }.join.upcase
+        map { |x| x.to_s(16).rjust(2, '0') }.join.upcase
       end
 
       def base64(strict: true)
