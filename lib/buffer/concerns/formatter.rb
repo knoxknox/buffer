@@ -17,7 +17,7 @@ module Buffer
         map { |x| x.to_s(16).rjust(2, '0') }.join.upcase
       end
 
-      def base64(strict: true)
+      def base64(strict = true)
         strict ? Base64.strict_encode64(str) : Base64.encode64(str)
       end
     end
