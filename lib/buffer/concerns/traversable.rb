@@ -17,7 +17,7 @@ module Buffer
         ByteBuffer.new(bytes.slice(start - 1, length))
       end
 
-      def each_chunk(count)
+      def each_chunk(count, &block)
         bytes.each_slice(count) { |x| yield ByteBuffer.new(x) }
       end
     end
