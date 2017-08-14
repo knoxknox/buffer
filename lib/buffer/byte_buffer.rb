@@ -1,3 +1,7 @@
+require 'forwardable'
+require 'buffer/concerns/formatter'
+require 'buffer/concerns/traversable'
+
 module Buffer
   class ByteBuffer
     extend Forwardable

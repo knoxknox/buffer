@@ -1,3 +1,5 @@
+require 'base64'
+
 module Buffer
   module Concerns
     module Formatter
