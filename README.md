@@ -5,7 +5,7 @@
 Package 'buffer' implements functions for the manipulation of byte slices.
 
 ## Examples
-```
+```ruby
 Buffer.int(20).hex       # hex: 14
 Buffer.int(20).bytes     # bytes: [20]
 Buffer.int(20).chars     # chars: ["\x14"]
@@ -16,7 +16,7 @@ Buffer.int(0b1010).hex   # hex: 0A
 Buffer.int(0b1010).bytes # bytes: [10]
 Buffer.int(0b1010).chars # chars: ["\n"]
 ```
-```
+```ruby
 Buffer.str('demo').hex    # hex: 64656D6F
 Buffer.str('demo').str    # str: demo
 Buffer.str('demo').bits   # bits: ["01100100", "01100101", "01101101", "01101111"]
@@ -24,7 +24,7 @@ Buffer.str('demo').bytes  # bytes: [100, 101, 109, 111]
 Buffer.str('demo').chars  # chars: ["d", "e", "m", "o"]
 Buffer.str('demo').base64 # base64: ZGVtbw==
 ```
-```
+```ruby
 Buffer.hex('0x707172').hex    # hex: 707172
 Buffer.hex('0x707172').str    # str: pqr
 Buffer.hex('0x707172').bits   # bits: ["01110000", "01110001", "01110010"]
@@ -32,7 +32,7 @@ Buffer.hex('0x707172').bytes  # bytes: [112, 113, 114]
 Buffer.hex('0x707172').chars  # chars: ["p", "q", "r"]
 Buffer.hex('0x707172').base64 # base64: cHFy
 ```
-```
+```ruby
 Buffer.hex('0x707172').length                           # 3
 Buffer.hex('0x707172').last(2).hex                      # 7172
 Buffer.hex('0x707172').first(2).hex                     # 7071
@@ -42,7 +42,7 @@ Buffer.str('string42').each_chunk(2) { |x| puts x.hex } # 7374, 7269, 6E67, 3432
 ```
 
 ## Create custom converter
-```
+```ruby
 class MyConverter < Buffer::ByteConverter
   def convert
     [70, 50, 30] # should return array of bytes
