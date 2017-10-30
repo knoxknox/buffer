@@ -53,7 +53,7 @@ Buffer.str('string42').each_chunk(2) { |ch| ch.hex } # => "7374", "7269", "6E67"
 ```ruby
 class MyConverter < Buffer::ByteConverter
   def convert
-    [70, 50, 30] + Buffer.int(@input).bytes
+    [70, 50, 30] + Buffer.int(input).bytes
   end
 end
 
