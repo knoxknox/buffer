@@ -6,6 +6,10 @@ require 'buffer/converters/int_converter'
 require 'buffer/converters/str_converter'
 
 module Buffer
+  def self.bin(input)
+    self.create(input, BinConverter)
+  end
+
   def self.hex(input)
     self.create(input, HexConverter)
   end
