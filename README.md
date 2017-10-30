@@ -33,6 +33,14 @@ Buffer.hex('0x707172').chars  # => ["p", "q", "r"]
 Buffer.hex('0x707172').base64 # => "cHFy"
 ```
 ```ruby
+Buffer.bin('01111000 01100101').hex    # => "7865"
+Buffer.bin('01111000 01100101').str    # => "xe"
+Buffer.bin('01111000 01100101').bits   # => ["01111000", "01100101"]
+Buffer.bin('01111000 01100101').bytes  # => [120, 101]
+Buffer.bin('01111000 01100101').chars  # => ["x", "e"]
+Buffer.bin('01111000 01100101').base64 # => "eGU="
+```
+```ruby
 Buffer.hex('0x707172').length                        # => 3
 Buffer.hex('0x707172').last(2).hex                   # => "7172"
 Buffer.hex('0x707172').first(2).hex                  # => "7071"
