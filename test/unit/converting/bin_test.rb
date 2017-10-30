@@ -34,4 +34,12 @@ class BinTest < MiniTest::Test
     assert_equal(%w(01111000 00111000 00110110), @buffer.bits)
   end
 
+  def test_bin_lt_8bits
+    assert_equal(Buffer.bin('1 10 010 0100').bytes, [1, 2, 2, 4])
+  end
+
+  def test_bin_with_spaces
+    assert_equal(Buffer.bin('01111000 00111000 00110110').bytes, @buffer.bytes)
+  end
+
 end
