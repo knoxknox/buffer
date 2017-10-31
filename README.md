@@ -1,6 +1,7 @@
 # buffer
 [![Travis](https://travis-ci.org/knoxknox/buffer.svg?branch=master)](https://travis-ci.org/knoxknox/buffer)
 [![CodeClimate](https://codeclimate.com/github/knoxknox/buffer.svg)](https://codeclimate.com/github/knoxknox/buffer)
+[![CodeCoverage](https://codecov.io/gh/knoxknox/buffer/branch/master/graph/badge.svg)](https://codecov.io/gh/knoxknox/buffer)
 
 Functions for the manipulation of byte slices in Ruby.
 
