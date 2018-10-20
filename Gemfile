@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 group :test do
-  gem 'rake', '~> 12.2'
+  gem 'rake', '~> 12.3.1'
   gem 'minitest', '~> 5.10'
-  gem 'codecov', '~> 0.1.10'
-  gem 'simplecov', '~> 0.15.1'
+  gem 'codecov', '~> 0.1.13'
+  gem 'simplecov', '~> 0.16.1'
 end
