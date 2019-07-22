@@ -1,6 +1,6 @@
 require_relative '../../test_helper'
 
-class IntTest < MiniTest::Test
+class IntConverterTest < MiniTest::Test
 
   def test_dec_to_hex
     assert_equal('14', Buffer.int(20).hex)

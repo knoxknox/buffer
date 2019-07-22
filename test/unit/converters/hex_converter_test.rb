@@ -1,6 +1,6 @@
 require_relative '../../test_helper'
 
-class HexTest < MiniTest::Test
+class HexConverterTest < MiniTest::Test
 
   def setup
     @buffer = Buffer.hex('6578616d706c65')

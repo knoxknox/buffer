@@ -1,6 +1,6 @@
 require_relative '../../test_helper'
 
-class StrTest < MiniTest::Test
+class StrConverterTest < MiniTest::Test
 
   def setup
     @buffer = Buffer.str('bmw x5')
