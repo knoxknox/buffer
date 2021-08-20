@@ -3,4 +3,4 @@ rvm:
   - 2.6.8
   - 2.7.4
   - 3.0.2
-script: rake test
+script: bundle exec rake test
