@@ -1,5 +1,5 @@
 # buffer
-[![Travis](https://travis-ci.org/knoxknox/buffer.svg?branch=master)](https://travis-ci.org/knoxknox/buffer)
+[![Travis](https://app.travis-ci.com/knoxknox/buffer.svg?branch=master)](https://app.travis-ci.com/knoxknox/buffer)
 [![CodeClimate](https://codeclimate.com/github/knoxknox/buffer.svg)](https://codeclimate.com/github/knoxknox/buffer)
 [![CodeCoverage](https://codecov.io/gh/knoxknox/buffer/graph/badge.svg)](https://codecov.io/gh/knoxknox/buffer/list/master)
 
