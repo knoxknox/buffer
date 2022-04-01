@@ -4,7 +4,7 @@ GEM
     codecov (0.6.0)
       simplecov (>= 0.15, < 0.22)
     docile (1.4.0)
-    minitest (5.14.4)
+    minitest (5.15.0)
     rake (13.0.6)
     simplecov (0.21.2)
       docile (~> 1.1)
@@ -18,7 +18,7 @@ PLATFORMS
 
 DEPENDENCIES
   codecov (~> 0.6.0)
-  minitest (~> 5.14)
+  minitest (~> 5.15)
   rake (~> 13.0.6)
   simplecov (~> 0.21.2)
 
