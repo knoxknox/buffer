@@ -1,0 +1,14 @@
+name: build
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: ['2.7.5', '3.0.3', '3.1.1']
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - run: BRANCH=${{ github.ref }} bundle exec rake test
