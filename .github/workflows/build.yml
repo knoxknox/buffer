@@ -7,14 +7,15 @@ jobs:
       matrix:
         ruby: ['3.2.8', '3.3.8', '3.4.4']
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-      - run: bundle install && bundle exec rake test
+      - run: |
+          bundle install
+          bundle exec rake test
       - uses: codecov/codecov-action@v5
         with:
-          verbose: true
           fail_ci_if_error: true
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
