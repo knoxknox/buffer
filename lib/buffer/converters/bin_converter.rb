@@ -7,7 +7,6 @@ module Buffer
       parts.map { |x| normalize_bits(x).to_i(2) }
     end
 
-
     private
 
     def normalize_bits(value)

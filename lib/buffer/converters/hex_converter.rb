@@ -7,7 +7,6 @@ module Buffer
       hex.scan(/../).map { |x| x.to_i(16) }
     end
 
-
     private
 
     def normalize_hex(str)

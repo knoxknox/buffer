@@ -9,19 +9,19 @@ require 'buffer/converters/str_converter'
 
 module Buffer
   def self.bin(input)
-    self.create(input, BinConverter)
+    create(input, BinConverter)
   end
 
   def self.hex(input)
-    self.create(input, HexConverter)
+    create(input, HexConverter)
   end
 
   def self.int(input)
-    self.create(input, IntConverter)
+    create(input, IntConverter)
   end
 
   def self.str(input)
-    self.create(input, StrConverter)
+    create(input, StrConverter)
   end
 
   def self.create(input, converter)

@@ -3,7 +3,6 @@
 require_relative '../../test_helper'
 
 class HexConverterTest < Minitest::Test
-
   def setup
     @buffer = Buffer.hex('6578616d706c65')
   end
@@ -17,7 +16,7 @@ class HexConverterTest < Minitest::Test
   end
 
   def test_hex_to_chars
-    assert_equal(%w(e x a m p l e), @buffer.chars)
+    assert_equal(%w[e x a m p l e], @buffer.chars)
   end
 
   def test_hex_to_strict_base64
@@ -37,7 +36,6 @@ class HexConverterTest < Minitest::Test
   end
 
   def test_hex_to_bits
-    assert_equal(%w(01100101 01111000 01100001 01101101 01110000 01101100 01100101), @buffer.bits)
+    assert_equal(%w[01100101 01111000 01100001 01101101 01110000 01101100 01100101], @buffer.bits)
   end
-
 end

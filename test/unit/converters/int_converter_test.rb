@@ -3,7 +3,6 @@
 require_relative '../../test_helper'
 
 class IntConverterTest < Minitest::Test
-
   def test_dec_to_hex
     assert_equal('14', Buffer.int(20).hex)
   end
@@ -51,5 +50,4 @@ class IntConverterTest < Minitest::Test
   def test_bin_to_bits
     assert_equal(['00001010'], Buffer.int(0b1010).bits)
   end
-
 end

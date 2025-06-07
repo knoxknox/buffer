@@ -3,7 +3,6 @@
 require_relative '../test_helper'
 
 class BufferTest < Minitest::Test
-
   def setup
     @buffer = Buffer.hex('0x6578616d706c65')
   end
@@ -51,5 +50,4 @@ class BufferTest < Minitest::Test
   def test_each_byte
     assert_equal('fybnqmf', @buffer.each_byte { |x| x + 1 }.str)
   end
-
 end

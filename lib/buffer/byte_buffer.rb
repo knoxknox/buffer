@@ -11,10 +11,11 @@ module Buffer
     include Concerns::Traversable
 
     attr_accessor :bytes
+
     def_delegators :@bytes, :map, :each, :length
 
     def initialize(bytes)
-      @bytes = bytes || fail('byte sequence cannot be null')
+      @bytes = bytes || raise('byte sequence cannot be null')
     end
   end
 end

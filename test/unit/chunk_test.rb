@@ -3,7 +3,6 @@
 require_relative '../test_helper'
 
 class ChunkTest < Minitest::Test
-
   def setup
     @buffer = Buffer.str('test example')
   end
@@ -22,5 +21,4 @@ class ChunkTest < Minitest::Test
       assert_equal(chunk.bytes, chunks[current_chunk - 1])
     end
   end
-
 end

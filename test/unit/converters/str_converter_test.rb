@@ -3,7 +3,6 @@
 require_relative '../../test_helper'
 
 class StrConverterTest < Minitest::Test
-
   def setup
     @buffer = Buffer.str('bmw x5')
   end
@@ -33,7 +32,6 @@ class StrConverterTest < Minitest::Test
   end
 
   def test_str_to_bits
-    assert_equal(%w(01100010 01101101 01110111 00100000 01111000 00110101), @buffer.bits)
+    assert_equal(%w[01100010 01101101 01110111 00100000 01111000 00110101], @buffer.bits)
   end
-
 end
