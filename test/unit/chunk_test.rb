@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-class ChunkTest < MiniTest::Test
+class ChunkTest < Minitest::Test
 
   def setup
     @buffer = Buffer.str('test example')

@@ -1,6 +1,6 @@
 require_relative '../../test_helper'
 
-class BinConverterTest < MiniTest::Test
+class BinConverterTest < Minitest::Test
 
   def setup
     @buffer = Buffer.bin('011110000011100000110110')
