@@ -12,3 +12,9 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
       - run: bundle install && bundle exec rake test
+      - uses: codecov/codecov-action@v5
+        with:
+          verbose: true
+          fail_ci_if_error: true
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
