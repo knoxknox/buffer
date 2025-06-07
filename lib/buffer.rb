@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'buffer/byte_buffer'
 require 'buffer/byte_converter'
 require 'buffer/converters/bin_converter'

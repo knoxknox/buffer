@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'forwardable'
 require 'buffer/concerns/formatter'
 require 'buffer/concerns/traversable'

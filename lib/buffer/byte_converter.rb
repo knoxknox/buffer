@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 # This is abstract base class for converters.
 # You can inherit it or use predefined converters.
