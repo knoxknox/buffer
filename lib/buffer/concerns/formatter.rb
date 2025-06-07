@@ -14,7 +14,7 @@ module Buffer
       end
 
       def bits
-        map { |x| "%08d" % x.to_s(2) }
+        map { |x| format('%08d', x.to_s(2)) }
       end
 
       def hex
