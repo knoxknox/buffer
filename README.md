@@ -1,6 +1,6 @@
 # buffer
 [![CI](https://github.com/knoxknox/buffer/workflows/build/badge.svg)](https://github.com/knoxknox/buffer/actions)
-[![CodeClimate](https://codeclimate.com/github/knoxknox/buffer.svg)](https://codeclimate.com/github/knoxknox/buffer)
+[![Qlty](https://qlty.sh/gh/knoxknox/projects/buffer/maintainability.svg)](https://qlty.sh/gh/knoxknox/projects/buffer)
 [![CodeCoverage](https://codecov.io/gh/knoxknox/buffer/graph/badge.svg)](https://codecov.io/gh/knoxknox/buffer/list/master)
 
 Functions for the manipulation of byte slices in Ruby.
