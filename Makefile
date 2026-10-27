@@ -8,3 +8,6 @@ release:
 
 install:
 	bundle install
+
+outdated:
+	bundle outdated
